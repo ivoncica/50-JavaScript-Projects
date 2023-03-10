@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel {
+    height: 100%;
+    width: 10%;
+    background-size: cover;
+    border-radius: 50px;
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    color: aliceblue;
+    -webkit-transition: all 700ms ease-in;
+    transition: all 700ms ease-in;
+}
+
+.panel.active {
+    flex-grow: 5;
+}
+
+.panel h3 {
+    font-size: 30px;
+    opacity: 0;
+}
+
+.panel.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
